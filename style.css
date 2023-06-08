@@ -1,0 +1,104 @@
+/**
+* ! Changing default styles of the browser
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #3c096c;
+    --lilac: #c8b6ff;
+    --white: #f0ecff;
+    --red: #f72585;
+    --light-purple: #b8c0ff;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/**
+* ! Navbar styles are here
+**/
+
+.navbar {
+    display: flex;
+    flex-direction: row; /* this is the default value for display: flex; */
+    justify-content: space-between;
+    background-color: var(--lilac);
+    color: var(--text);
+    padding: 25px 60px;
+    margin-bottom: 30px;
+}
+
+.cart {
+    position: relative;
+    background-color: var(--text);
+    color: var(--white);
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.cartNumber {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+/**
+* ! Shop items styles are here
+**/
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+}
+
+.item {
+    border: 4px solid var(--lilac);
+    border-radius: 12px;
+}
+
+.image {
+    width: 215px;
+    height: 215px;
+    border-radius: 8px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.bi-dash-lg {
+    color: var(--red);
+}
+
+.bi-plus-lg {
+    color: var(--text)
+}
