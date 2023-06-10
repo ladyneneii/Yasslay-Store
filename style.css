@@ -20,6 +20,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+i {
+    cursor: pointer;
+}
+
 /**
 * ! Navbar styles are here
 **/
@@ -32,6 +36,7 @@ body {
     color: var(--text);
     padding: 25px 60px;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 .cart {
